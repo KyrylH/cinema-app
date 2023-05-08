@@ -4,7 +4,6 @@ Cinema app is RESTful web application designed for demonstration purposes.\
 It's application simulates cinema ticket booking system.\
 The application follows the REST architecture style.\
 and application have role-based authorization.
-
 ## Navigation
 * [Technologies](#technologies)
 * [Project structure](#project-structure)
@@ -12,7 +11,6 @@ and application have role-based authorization.
 * [Features](#features)
 * [To run this app you need to](#to-run-this-app-you-need-to)
 * [Available endpoints for the Cinema app](#available-endpoints-for-the-cinema-app)
-
 ## Technologies
 | Techonology     | version |
 |-----------------|---------|
@@ -37,17 +35,14 @@ The project following 3-tier architecture:
 * `security` - contains security configuration
 * `util` - contains util classes
 * `config` - contains configuration classes
-
 ### Make sure you have installed:
 * Java 17
 * Apache maven 3.8.2
 * Apache tomcat 9.0.78
 * MySQL 8.0.32
-
 ### Features:
 * Registration with role-based authorization
 * Multiple endpoints for different roles
-
 ### To run this app you need to:
 * Clone this repository
 * Create database in MySQL with name `cinema`
@@ -56,9 +51,7 @@ The project following 3-tier architecture:
 * Deploy war file to tomcat server
 * Run tomcat server
 * Open in browser: `http://localhost:8080/`
-
 ---
-
 ## Api endpoints
 ### Available endpoints for the Cinema app:
 * Authentication endpoints:
@@ -82,13 +75,9 @@ The project following 3-tier architecture:
     * `PUT /shopping-carts/by-user` - Show shopping cart by user. (Available for user)
 * User
   * `GET /users/by-email` - Show user by email. (Available for ADMIN)
-
 ---
-
 ## Credentials for testing
 * Email: `admin@i.ua`
 * Password: `admin123`
-
 ## Author
-
 **Kyryl Hyliuk**
