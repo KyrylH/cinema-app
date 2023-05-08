@@ -1,8 +1,8 @@
 package cinema.lib;
 
+import java.util.Objects;
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
-import java.util.Objects;
 import org.springframework.beans.BeanWrapperImpl;
 
 public class FieldsValueMatchValidator

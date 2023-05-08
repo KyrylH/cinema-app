@@ -1,13 +1,13 @@
 package cinema.controller;
 
-import javax.validation.Valid;
-import java.util.List;
 import cinema.dto.request.MovieRequestDto;
 import cinema.dto.response.MovieResponseDto;
 import cinema.model.Movie;
 import cinema.service.MovieService;
 import cinema.service.mapper.RequestDtoMapper;
 import cinema.service.mapper.ResponseDtoMapper;
+import java.util.List;
+import javax.validation.Valid;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -22,8 +22,8 @@ public class MovieController {
     private final ResponseDtoMapper<MovieResponseDto, Movie> movieResponseDtoMapper;
 
     public MovieController(MovieService movieService,
-            RequestDtoMapper<MovieRequestDto, Movie> movieRequestDtoMapper,
-            ResponseDtoMapper<MovieResponseDto, Movie> movieResponseDtoMapper) {
+                           RequestDtoMapper<MovieRequestDto, Movie> movieRequestDtoMapper,
+                           ResponseDtoMapper<MovieResponseDto, Movie> movieResponseDtoMapper) {
         this.movieService = movieService;
         this.movieRequestDtoMapper = movieRequestDtoMapper;
         this.movieResponseDtoMapper = movieResponseDtoMapper;
